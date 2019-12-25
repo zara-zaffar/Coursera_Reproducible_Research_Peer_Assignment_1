@@ -1,0 +1,10 @@
+# Reproducible Research: Peer Assessment 1
+
+## Loading and preprocessing the data
+```{r}
+library("data.table")
+library(ggplot2)
+
+download.file(url = "https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip", destfile = "localfile.zip", method = "libcurl")
+unzip("repdata%2Fdata%2Factivity.zip",exdir = "data")
+```
